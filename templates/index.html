@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text Analyzer</title>
+</head>
+<body style="background-color: deepskyblue;">
+	<!-- <h1>Hello calling from the templates, My name is {{name}}, and i am from {{place}}</h1> -->
+<h1 style="font-size: 60px; text-align:center;">Welcome to the text analyzer: Enter your text below</h1>
+<form action="/analyze" method="get">
+	<textarea name='text' style="width: 1840px; height: 397px; margin:20px; font-size: 20px; padding: 15px;"></textarea>
+	<div style="display: flex;">
+		<div style="font-size:25px; margin-left: 20px; display:flex;">
+		<br><input type="checkbox" name="removepunc">Remove Punctuation</br>
+		<!-- <br><input type="checkbox" name="fullcaps">UPPERCASE</br> -->
+	</div>
+	<div style="font-size:25px; margin-left: 20px; display:flex;">
+		<!-- <br><input type="checkbox" name="removepunc">Remove Punctuation</br> -->
+		<br><input type="checkbox" name="fullcaps">UPPERCASE</br>
+	</div>
+	<div style="font-size:25px; margin-left: 20px; display:flex;">
+		<!-- <br><input type="checkbox" name="removepunc">Remove Punctuation</br> -->
+		<br><input type="checkbox" name="lineRemover">New Line Remover</br>
+	</div>
+	<div style="font-size:25px; margin-left: 20px; display:flex;">
+		<!-- <br><input type="checkbox" name="removepunc">Remove Punctuation</br> -->
+		<br><input type="checkbox" name="extraSpaceRemover">Extra Space Remover</br>
+	</div>
+	<div style="font-size:25px; margin-left: 20px; display:flex;">
+		<!-- <br><input type="checkbox" name="removepunc">Remove Punctuation</br> -->
+		<br><input type="checkbox" name="charCount">Character count</br>
+	</div>
+	</div>
+	<button type="submit" style="font-size: 25px; margin:20px; width:250px; height:60px; border-radius:10px; cursor:pointer;">Analyze Text</button>
+</form>
+</body>
+</html>

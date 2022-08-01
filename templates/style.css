@@ -1,0 +1,54 @@
+#container{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.folder{
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+.folder:hover{
+    transform: scale(1.06);
+}
+#MyFirstButton{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    margin-left: 600px;
+    width: 200px;
+    cursor: pointer;
+
+}
+#myFirstButton:hover{
+    transform: scale(1.005);
+}
+.folder [action]{
+    /* text-decoration: underline; */
+    cursor: pointer;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 18px;
+    /* margin-left: 20px; */
+}
+.folder [action]:hover{
+    transform: scale(1.03);
+}
+/* .folder [action='edit']{
+    margin-left: 40px;
+} */
+.folder [purpose]{
+    margin-top: 50px;
+    color: darkslateblue;
+    text-align: center;
+    font-weight: bold;
+}
